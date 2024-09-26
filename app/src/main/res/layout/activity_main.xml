@@ -1,0 +1,130 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/JetBlack"
+    android:gravity="center">
+
+    <!-- FrameLayout to overlap ProgressBar and TextView -->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <!-- Circular ProgressBar -->
+        <ProgressBar
+            android:id="@+id/circularProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:indeterminate="false"
+            android:max="60000"
+            android:progressDrawable="@drawable/circular_progress_bar" />
+
+        <!-- Timer text on top of the ProgressBar -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <!-- Minutes TextView -->
+            <TextView
+                android:id="@+id/minuteTextView"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:gravity="center"
+                android:textSize="45sp"
+                android:textStyle="bold"
+                android:textColor="@color/CamBlue" />
+
+            <!-- Colon separator -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textSize="45sp"
+                android:textStyle="bold"
+                android:textColor="@color/CamBlue" />
+
+            <!-- Seconds TextView -->
+            <TextView
+                android:id="@+id/secondTextView"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:gravity="center"
+                android:textSize="45sp"
+                android:textStyle="bold"
+                android:textColor="@color/CamBlue" />
+
+            <!-- Colon separator -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textSize="45sp"
+                android:textStyle="bold"
+                android:textColor="@color/CamBlue" />
+
+            <!-- Milliseconds TextView -->
+            <TextView
+                android:id="@+id/millisecondTextView"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:gravity="center"
+                android:textSize="45sp"
+                android:textStyle="bold"
+                android:textColor="@color/CamBlue" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <!-- Buttons arranged horizontally -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="32dp"
+        android:gravity="center">
+
+        <!-- Start Button -->
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/yellow"
+            android:text="Start"
+            android:textSize="20sp"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Stop Button -->
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/yellow"
+            android:textSize="20sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Reset Button -->
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/yellow"
+            android:textSize="20sp"
+            android:text="Reset"
+            android:layout_marginStart="16dp" />
+
+    </LinearLayout>
+</LinearLayout>
