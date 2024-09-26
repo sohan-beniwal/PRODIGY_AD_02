@@ -1,8 +1,4 @@
 # PRODIGY_AD_02
-Here's a sample README file for your Stopwatch project in Kotlin. You can customize it as needed:
-
----
-
 # Stopwatch Application
 
 A simple Stopwatch application developed in Kotlin for Android. This app allows users to measure elapsed time with features such as start, stop, reset, and a circular progress bar.
